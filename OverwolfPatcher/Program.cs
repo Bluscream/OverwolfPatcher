@@ -49,6 +49,16 @@ namespace OverwolfPatcher
 
             Console.WriteLine();
 
+            Console.Write($"Overwatch ProgramFolder: {ow.ProgramFolder} (");
+            foreach (var vf in ow.ProgramVersionFolders)
+            {
+                Console.Write($"{vf.Name}, ");
+            }
+            Console.WriteLine(")");
+            Console.WriteLine($"Overwatch DataFolder: {ow.DataFolder}");
+
+            Console.WriteLine();
+
             foreach (var patch in Patches)
             {
                 Exception error;

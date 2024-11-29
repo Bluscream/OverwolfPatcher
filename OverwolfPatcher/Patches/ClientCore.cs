@@ -83,6 +83,9 @@ internal class ClientCore : IPatch
                                 Console.WriteLine(e);
                             }
                         }
+                    } else
+                    {
+                        Console.WriteLine(Utils.Pad("OverWolf.Client.Core.ODKv2.Profile.OverwolfSubscriptionover not found!"));
                     }
 
                 } else
